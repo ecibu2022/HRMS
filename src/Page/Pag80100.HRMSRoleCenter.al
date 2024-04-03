@@ -41,6 +41,15 @@ page 80100 "HRMS Role Center"
                 ApplicationArea = All;
                 RunObject = page Currencies;
             }
+            group(GroupName)
+            {
+                action(NB)
+                {
+                  Caption = 'View NB';
+                    ApplicationArea = All;
+                    RunObject = page Currencies;  
+                }
+            }
         }
 
         area(Reporting)

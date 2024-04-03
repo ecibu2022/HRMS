@@ -1,6 +1,6 @@
-table 80100 MyEmployee
+table 80101 Lines
 {
-    Caption = 'Employee';
+    Caption = 'Lines';
     DataClassification = ToBeClassified;
     
     fields
@@ -9,13 +9,13 @@ table 80100 MyEmployee
         {
             Caption = 'ID';
         }
-        field(2; Name; Text[100])
+        field(2; DOB; Date)
         {
-            Caption = 'Name';
+            Caption = 'DOB';
         }
-        field(3; "Creation Date"; Date)
+        field(3; Religion; Enum "Religion Options")
         {
-            Caption = 'Creation Date';
+            Caption = 'Religion';
         }
     }
     keys
